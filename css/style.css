@@ -106,6 +106,7 @@ section{
     padding:35px 15px;
     transition: 0.4s;
     cursor: pointer;
+    background: #010007;
 
 }
 .numbers-boxes{
