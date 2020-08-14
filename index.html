@@ -41,13 +41,21 @@
     <section id="banner">
         <div class="pk">
             <div id='stars'></div>
-        <div id='stars2'></div>
-        <div id='stars3'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </div>
+        <div class="earth-img">
+            <!-- <img src="images/banner.png" alt=""> -->
+            <video id="myVideo" width="100%" controls="controls" autoplay="true">
+                <source src="earth-video.mp4" type="video/mp4">
+                <source src="earth-video.ogg" type="video/ogg">
+              </video>
+              
         </div>
         <div class="container">
             <div class="banner">
                 <div class="earth-img">
-                    <img src="images/banner.png" alt="">
+                    <!-- <img src="images/banner.png" alt=""> -->
                 </div>
                 <div class="banner-text">
                     <div class="title-earth">
@@ -373,5 +381,22 @@
             
         });
     </script>
+    <script>
+        var vid = document.getElementById("myVideo");
+        function enableAutoplay() { 
+          vid.autoplay = true;
+          vid.load();
+        }
+        
+        function disableAutoplay() { 
+          vid.autoplay = false;
+          vid.load();
+        } 
+        
+        function checkAutoplay() { 
+          alert(vid.autoplay);
+        } 
+        </script> 
+    
 </body>
 </html>

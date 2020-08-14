@@ -1,8 +1,9 @@
 body{
     color: #fafafa;
-    background-image: url("../images/bg.png");
+    /* background-image: url("../images/bg.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
+    background: #010007;
     font-family: 'Open Sans', sans-serif;
 
 }
@@ -16,7 +17,6 @@ body{
 section{
     display: inline-block;
     width: 100%;
-    padding: 50px 0;
     /* float: left; */
 
 }
@@ -56,22 +56,19 @@ section{
     
 }
 
-#banner img{
-    max-width: 900px;
-    margin-top: -85px;
-    margin-left: 80px;
-}
 .banner-text .title-earth {
     color: white;
     letter-spacing: 35px;
 }
 .banner-text {
-    margin-top: -250px;
+  margin-top: -420px;
+  position: relative;
+  z-index: 9;
 }
 .banner-about {
     text-align: center;
     color: white;
-    margin-top: 60px;
+    margin-top: 30px;
     max-width: 550px;
     margin-right: auto;
     margin-left: auto;
@@ -126,7 +123,7 @@ section{
     
 }
 section#numbers-speak{
-    margin-top: 120px;
+    margin-top: 80px;
 }
 .speak-box:hover {
     background: #0278ff;
@@ -252,7 +249,8 @@ section#numbers-speak{
     display: inline-block;
   }
   section#projects {
-    background: #0a0431;
+    background: #010007;
+    margin-top: 120px;
 }
 
 
@@ -269,14 +267,15 @@ section#numbers-speak{
 }
 
 section#about {
-  background: #0a0431;
-  padding-top: 120px;
+  background: #010007;
+  margin-top: 200px;
 }
 
 .abouts {
   border-radius: 10px;
   background: #03A9F4;
   padding: 25px 70px;
+  position: relative;
 }
 .video-part{
   position: relative;
@@ -383,7 +382,7 @@ section#about {
   padding-right: 50px;
 }
 section.our_people {
-  background: #090231;
+  background: #010007;
   padding: 100px 0;
   width: 100%;
   display: inline-block;
@@ -394,7 +393,7 @@ section.our_people {
 
 /* START REQUEST CSS */
 .request_cnt {
-  background: #090231;
+  background: #010007;
   width: 100%;
   position: relative;
 }
@@ -487,7 +486,7 @@ button.send_btn {
 
 /* START FOOTER CSS  */
 .footer {
-  background: #090231;
+  /* background: #090231; */
   padding: 51px 0 20px 0;
 }
 .footer_cnt ul {
@@ -557,7 +556,7 @@ button.send_btn {
 }
 section#partners {
   float: left;
-  background: #0a0431;
+  background: #010007;
 }
 
 .slider-partners button.slick-arrow::before{
@@ -602,7 +601,7 @@ section#partners {
 
 /* START OUR TEAM CSS */
 .our_team {
-  background: #090231;
+  background: #010007;
   padding: 100px 0;
 }
 .soc {
@@ -653,7 +652,7 @@ span.founder_name {
 /* END OUR TEAM CSS */
 
 .team_info {
-  background: #181e40;
+  background: #010007;
 }
 .team_cnt {
   padding: 15px;
@@ -682,4 +681,19 @@ span.founder_name {
   color: #ddd;
 
 
+}
+.slick-initialized .slick-slide{
+  position: relative;
+}
+.slick-initialized .slick-slide:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #010007;
+  height: 100%;
+}
+.slick-slide img{
+  position: relative !important;
 }
