@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 body{
     color: #fafafa;
     /* background-image: url("../images/bg.png");
@@ -91,11 +95,12 @@ section{
     text-transform: uppercase;
     transition: 0.5s;
 }
-.btn:hover{
+
+.btn:hover, .btn:focus{
     background-color: white;
     color: #333;
-
 }
+
 .section-title h2 {
     font-weight: normal;
     font-size: 35px;
